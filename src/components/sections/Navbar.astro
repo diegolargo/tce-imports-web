@@ -67,7 +67,7 @@ import BrandLogo from "@components/BrandLogo.astro";
       >
         <!-- Navigation links component -->
         {strings.navBarLinks.map(link => (
-          <NavLink url={link.url} name={link.name} />
+          <NavLink url={link.url} name={link.name} target={link.target} />
         ))}
         <!-- ThemeIcon component specifically for larger screens -->
         <span class="hidden md:inline-block">
