@@ -1,14 +1,16 @@
 ---
-const { url, name } = Astro.props;
+const { url, name, target } = Astro.props;
 
 interface Props {
   url: string;
   name: string;
+  target: string;
 }
 ---
 <a
   id={url === "/" ? "home" : url.replace("/", "")}
   href={url}
+  target={target} 
   data-astro-prefetch
   class="rounded-lg text-base font-medium text-white outline-none hover:bg-white/10 focus-visible:ring dark:focus:outline-none py-1 px-2 md:text-sm 2xl:text-base"
 >

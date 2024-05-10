@@ -1,9 +1,9 @@
 const navBarLinks = [
-  { name: "Inicio", url: "/" },
-  { name: "¿Quiénes somos?", url: "/#about" },
-  { name: "Servicios", url: "/services" },
-  { name: "Blog", url: "/blog" },
-  { name: "Contacto", url: "https://api.whatsapp.com/send?phone=573228553687&text=Hola%2Ctengo%20una%20consulta." },
+  { name: "Inicio", url: "/", target: "" },
+  { name: "¿Quiénes somos?", url: "/#about", target: "" },
+  { name: "Servicios", url: "/services", target: "" },
+  { name: "Blog", url: "/blog", target: "" },
+  { name: "Contacto", url: "https://api.whatsapp.com/send?phone=573228553687&text=Hola%2Ctengo%20una%20consulta.", target: "_blank" },
 ];
 const footerLinks = [
   {
