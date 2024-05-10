@@ -66,7 +66,7 @@ export default function SliderFlags() {
         <SwiperSlide className="mx-auto flex items-center justify-between gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-orange sm:text-4xl">
-              Tecnologia
+              Tecnología
             </h2>
             <div className="dark:text-white">
               <svg
@@ -122,7 +122,7 @@ export default function SliderFlags() {
         <SwiperSlide className="mx-auto flex items-center justify-between gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-orange sm:text-4xl">
-              Equipos Medicos
+              Equipos Médicos
             </h2>
             <div className="dark:text-white">
               <svg
