@@ -1,0 +1,113 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import MainSection from "@components/ui/blocks/MainSection.astro";
+import LeftSection from "@components/ui/blocks/LeftSection.astro";
+import RightSection from "@components/ui/blocks/RightSection.astro";
+import transporteAereo from "@images/transporteAereo.webp";
+import courierCarga from "@images/courierCarga.webp";
+import casilleroVirtual from "@images/casilleroVirtual.webp";
+import { SITE } from "@data/constants";
+
+interface Article {
+  isRightSection: boolean;
+  title: string;
+  subTitle: string;
+  btnExists?: boolean;
+  btnTitle?: string;
+  btnURL?: string;
+  img?: any;
+  imgAlt?: string;
+}
+
+const articles: Article[] = [
+  {
+    isRightSection: true,
+    title: "Transporte Aereo",
+    subTitle:
+      "Especialmente recomendado para productos de alto valor, como tecnología, insumos médicos, maquinaria, repuestos y partes de automóviles.",
+    img: transporteAereo,
+    imgAlt: "tce import transporte Aereo",
+    btnExists: true,
+    btnTitle: "Más Información",
+    btnURL: "https://api.whatsapp.com/send?phone=573228553687&text=Hola%2C%20Quiero%20más%20información%20sobre%20transporte%20aereo.",
+  },
+  {
+    isRightSection: false,
+    title: "Courier y Carga",
+    subTitle:
+      "¡Envíos rápidos y seguros! Tu solución ideal para documentos urgentes y transporte de carga a cualquier destino.",
+    img: courierCarga,
+    imgAlt: "tce import Courier y Carga",
+    btnExists: true,
+    btnTitle: "Más Información",
+    btnURL: "https://api.whatsapp.com/send?phone=573228553687&text=Hola%2C%20Quiero%20más%20información%20sobre%20Courier%20y%20Carga.",
+  },
+  {
+    isRightSection: true,
+    title: "Casillero Virtual",
+    subTitle:
+      "Es una dirección física en Estados Unidos destinada a recibir los paquetes de nuestros clientes. No cobramos por el uso del casillero.",
+    img: casilleroVirtual,
+    imgAlt: "tce import Casillero Virtual",
+    btnExists: true,
+    btnTitle: "Más Información",
+    btnURL: "https://api.whatsapp.com/send?phone=573228553687&text=Hola%2C%20Quiero%20más%20información%20sobre%20Casillero%20Virtual.",
+  }
+];
+
+const pageTitle: string = `Servicios | ${SITE.title}`;
+---
+
+<MainLayout
+  title={pageTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.tceimports.com/services",
+    "url": "https://www.tceimports.com/services",
+    "name": "Servicios | TCE IMPORTS",
+    "description": "Descubre cómo en TCE Imports convertimos tus deseos en realidad, importando los mejores productos desde Estados Unidos a Colombia.",
+    "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://www.tceimports.com/",
+        "name": "TCE IMPORTS",
+        "description": "Descubre cómo en TCE Imports convertimos tus deseos en realidad, importando los mejores productos desde Estados Unidos a Colombia."
+    },
+    "inLanguage": "es-ES"
+  }}
+>
+  <MainSection
+    title="Estamos Para Ti"
+    subTitle="Impulse dinámicamente el comercio electrónico innovador y los paradigmas distribuidos."
+    btnExists={false}
+    btnTitle=""
+    btnURL="#"
+  />
+  <section>
+    {
+      articles.map(article => {
+        return article.isRightSection ? (
+          <RightSection
+            title={article.title}
+            subTitle={article.subTitle}
+            img={article.img}
+            imgAlt={article.imgAlt}
+            btnExists={article.btnExists}
+            btnTitle={article.btnTitle}
+            btnURL={article.btnURL}
+          />
+        ) : (
+          <LeftSection
+            title={article.title}
+            subTitle={article.subTitle}
+            img={article.img}
+            imgAlt={article.imgAlt}
+            btnExists={article.btnExists}
+            btnTitle={article.btnTitle}
+            btnURL={article.btnURL}
+          />
+        );
+      })
+    }
+  </section>
+</MainLayout>

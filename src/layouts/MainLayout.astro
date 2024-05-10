@@ -1,0 +1,46 @@
+---
+import Meta from "@components/Meta.astro";
+import Navbar from "@components/sections/Navbar.astro";
+import FooterSection from "@components/sections/FooterSection.astro";
+
+const { title, description, image, articleDate } = Astro.props
+---
+
+<html lang=es class="scrollbar-hide scroll-smooth scroll-pt-16">
+  <head>
+    <Meta title={title} description={description} ogImage={image} articleDate={articleDate} />
+    <title>{title}</title>
+    <script is:inline>
+      if (
+        localStorage.getItem("hs_theme") === "dark" ||
+        (!("hs_theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body
+    class="bg-yellow/10 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-800"
+  >
+    <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+      <Navbar />
+      <main>
+        <slot />
+      </main>
+    </div>
+    <FooterSection />
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </body>
+</html>

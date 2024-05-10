@@ -1,0 +1,29 @@
+{
+  "subTitle": "Obtenga Respuestas objetivas de nuestra marca y productos.",
+  "faqs": [
+    {
+      "question": "¿Cuánto tiempo tarda en entregarse un envío?",
+      "answer": "El tiempo de entrega puede variar según el servicio seleccionado y la ubicación del destinatario. Ofrecemos opciones de entrega exprés para envíos urgentes, así como servicios estándar que pueden tardar unos días adicionales en llegar. Los tiempos de entrega estimados se proporcionan al momento de realizar el envío."
+    },
+    {
+      "question": "¿Cuáles son los costos de envío?",
+      "answer": "Los costos de envío pueden variar según el peso, el tamaño, la distancia y el servicio seleccionado. Ofrecemos tarifas competitivas y transparentes, y los clientes pueden obtener una cotización de envío en línea o contactando a nuestro equipo de atención al cliente."
+    },
+    {
+      "question": "¿Qué debo hacer si mi paquete se pierde o llega dañado?",
+      "answer": "En caso de que ocurra algún problema con tu envío, te recomendamos ponerte en contacto con nuestro equipo de atención al cliente de inmediato. Estaremos encantados de ayudarte a resolver cualquier problema y tomar las medidas necesarias para localizar o reemplazar tu paquete."
+    },
+    {
+      "question": "¿Qué medidas de seguridad se implementan para proteger los envíos?",
+      "answer": "Implementamos estrictos protocolos de seguridad para garantizar la integridad y la seguridad de todos los envíos. Esto incluye el uso de sistemas de seguimiento y monitoreo, procedimientos de verificación de identidad y la capacitación de nuestro personal en prácticas de seguridad."
+    },
+    {
+      "question": "¿Ofrecen servicios de envío de carga pesada o mercancías peligrosas?",
+      "answer": "Sí, ofrecemos servicios de envío de carga pesada y mercancías peligrosas, cumpliendo con todas las regulaciones y normativas aplicables. Nuestro equipo está capacitado y equipado para manejar una amplia variedad de productos y garantizar su entrega segura y oportuna."
+    },
+    {
+      "question": "¿Qué servicios ofrece su empresa de envíos?",
+      "answer": "Ofrecemos una amplia gama de servicios de envío y entregas, que incluyen envíos nacionales e internacionales, entrega exprés, logística de última milla, almacenamiento y gestión de inventario, entre otros."
+    }
+  ]
+}

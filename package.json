@@ -1,0 +1,33 @@
+{
+  "name": "tce-imports",
+  "type": "module",
+  "version": "0.0.1",
+	"description": "Descubre cómo en TCE Imports convertimos tus deseos en realidad, importando los mejores productos desde Estados Unidos a Colombia.",
+	"author": "D2",
+	"license": "GPL-3.0-only",
+	"keywords": [
+		"importaciones", "courier", "importamos desde Estados Unidos", "importaciones Colombia", "productos USA", "compras internacionales"
+	],
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/react": "^3.3.2",
+    "@astrojs/tailwind": "^5.1.0",
+    "@emailjs/browser": "^4.3.3",
+    "@headlessui/react": "^1.7.19",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.7.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.1.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  }
+}

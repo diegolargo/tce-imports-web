@@ -1,0 +1,17 @@
+[
+  {
+    "heading": "Precios Transparentes",
+    "content": "Sin sorpresas ni costos ocultos, te brindamos claridad y honestidad en cada oferta",
+    "svg": "price"
+  },
+  {
+    "heading": "Transporte Priority",
+    "content": "Si tienes envíos urgentes o plazos ajustados, este servicio es ideal. Tu mercancía se mueven de manera ágil y efeciente.",
+    "svg": "priority"
+  },
+  {
+    "heading": "Casillero",
+    "content": "Valoramos a nuestros clientes y queremos ofrecerles un servicio excepcional. Por eso, ofrecemos casilleros virtuales gratuitos",
+    "svg": "home"
+  }
+]
