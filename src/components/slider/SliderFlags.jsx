@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFlip } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-fade";
+import 'swiper/css/effect-flip';
 import banderaSpain from "../../images/banderaSpain.webp";
 import banderaCanada from "../../images/banderaCanada.webp";
 import banderaUsa from "../../images/banderaUsa.webp";
@@ -11,19 +11,19 @@ export default function SliderFlags() {
   return (
     <>
       <Swiper
-        effect={"fade"}
+        effect={"flip"}
         autoplay={{
           delay: 2500,
         }}
         loop={true}
         slidesPerView={1}
         grabCursor={true}
-        modules={[Autoplay, EffectFade]}
-        className="my-10 w-full max-w-80"
+        modules={[Autoplay, EffectFlip]}
+        className="mb-10 sm:mb-4 w-full max-w-sm"
       >
         <SwiperSlide className="mx-auto gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white/80 px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-orange md:text-4xl">
+            <h2 className="text-2xl font-bold text-orange sm:text-4xl">
               Autopartes
             </h2>
             <div className="dark:text-white">
@@ -65,7 +65,7 @@ export default function SliderFlags() {
 
         <SwiperSlide className="mx-auto flex items-center justify-between gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-orange md:text-4xl">
+            <h2 className="text-2xl font-bold text-orange sm:text-4xl">
               Tecnologia
             </h2>
             <div className="dark:text-white">
@@ -87,7 +87,7 @@ export default function SliderFlags() {
 
         <SwiperSlide className="mx-auto flex items-center justify-between gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-orange md:text-4xl">
+            <h2 className="text-2xl font-bold text-orange sm:text-4xl">
               Textiles
             </h2>
             <div className="dark:text-white">
@@ -121,7 +121,7 @@ export default function SliderFlags() {
 
         <SwiperSlide className="mx-auto flex items-center justify-between gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-orange md:text-4xl">
+            <h2 className="text-2xl font-bold text-orange sm:text-4xl">
               Equipos Medicos
             </h2>
             <div className="dark:text-white">
@@ -143,7 +143,7 @@ export default function SliderFlags() {
 
         <SwiperSlide className="mx-auto flex items-center justify-between gap-4 overflow-hidden rounded-md border border-zinc-200 bg-white px-6 py-4 shadow-2xl dark:border-zinc-700 dark:bg-neutral-800">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-orange md:text-4xl">
+            <h2 className="text-2xl font-bold text-orange sm:text-4xl">
               Juguetes
             </h2>
             <div className="dark:text-white">
@@ -164,7 +164,7 @@ export default function SliderFlags() {
         </SwiperSlide>
       </Swiper>
 
-      <div className="absolute -top-3/4 left-0 grid grid-cols-2 place-items-center sm:-top-1/2 md:grid-cols-4">
+      <div className="grid grid-cols-2 place-items-center sm:-top-1/2 md:grid-cols-4">
         <img
           src={banderaUsa.src}
           alt="bandera de españa"
