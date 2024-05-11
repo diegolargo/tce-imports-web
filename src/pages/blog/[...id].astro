@@ -31,7 +31,7 @@ const pageTitle: string = `${(post as any).attributes.title} | ${SITE.title}`;
                 width={100}
                 height={100}
                 class="h-full w-full object-cover object-center"
-                src={url + (post as any).attributes.img.data.attributes.url}
+                src={(post as any).attributes.img.data.attributes.url}
                 alt={(post as any).attributes.title}
                 draggable={"false"}
               />
