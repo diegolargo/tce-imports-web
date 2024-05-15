@@ -49,6 +49,7 @@ export default function ModalCotizar() {
         <img src={heroImage.src} alt="repartidores de tce imports" />
         <button
           onClick={() => setModal(true)}
+          aria-label="mostrar video"
           className="cursor-pointer bg-white border-zinc-700 dark:text-white dark:bg-neutral-800 w-fit border p-4 rounded-full absolute top-1/2 left-1/2 hover:scale-105 transition-transform duration-300 -translate-x-1/2 -translate-y-1/2"
         >
           <svg
