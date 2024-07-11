@@ -15,9 +15,10 @@ export default function MyModal() {
       try {
         const response = await fetch('https://strapi-tceimports.onrender.com/api/anuncios?populate[img][fields][0]=url');
         const data = await response.json();
+        console.log(data.data[0]);
         if (data.data.length > 0) {
           const title = data.data[0].attributes.title
-          const image = data.data[0].attributes.img.data.attributes.url
+          const image = data.data[1].attributes.img.data[0].attributes.url
           setTitle(title);
           setImage(image);
           setModal(true)
@@ -65,7 +66,7 @@ export default function MyModal() {
                     {title}
                   </Dialog.Title>
 
-                  <img className='rounded-xl' src={`https://strapi-tceimports.onrender.com${image}`} alt={title} />
+                  <img className='rounded-xl' src={image} alt={title} />
 
                   <div className="mt-6 flex justify-center">
                     <button
